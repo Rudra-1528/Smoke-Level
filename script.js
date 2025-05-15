@@ -2,8 +2,13 @@ const ACCESS_TOKEN = "tVOHhSaOgXc8YMaKx6K9"; // Your ThingsBoard device token
 const THRESHOLD = 400;
 
 const client = mqtt.connect("wss://mqtt.thingsboard.cloud/mqtt", {
-  username: ACCESS_TOKEN
+  username: ACCESS_TOKEN,
+  keepalive: 60,
+  reconnectPeriod: 1000,
+  connectTimeout: 30 * 1000,
+  clean: true,
 });
+
 
 const smokeDisplay = document.getElementById("smokeLevel");
 const statusDisplay = document.getElementById("status");
