@@ -1,7 +1,7 @@
 const ACCESS_TOKEN = "tVOHhSaOgXc8YMaKx6K9"; // Your ThingsBoard device token
 const THRESHOLD = 400;
 
-const client = mqtt.connect("wss://mqtt.thingsboard.cloud:443/mqtt", {
+const client = mqtt.connect("wss://mqtt.thingsboard.cloud/mqtt", {
   username: ACCESS_TOKEN
 });
 
