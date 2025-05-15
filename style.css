@@ -1,62 +1,90 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
 }
 
+.logo{
+   text-align: center;
+   padding-top: ;
+
+   height: 100px;
+
+   
+}
+
+.main{
+  display:flex;
+  flex-direction: column-reverse;
+  align-items:center;
+  justify-content: center;
+  height: 80vh;
+}
 .container {
-  max-width: 500px;
-  margin: auto;
-  background-color: #1c1c1c;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px #00000088;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 90%;
+  
+  
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
 
-.card {
-  background: #333;
+.status-box {
+  background-color: #ffffff10;
   padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px #555;
+  border-radius: 12px;
+  font-size: 1.2rem;
 }
 
-.label {
-  font-size: 16px;
-  color: #bbb;
+#smokeLevel {
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
-.value {
-  font-size: 40px;
+#status {
   font-weight: bold;
-  color: #00e676;
 }
 
-#alert {
-  color: #ff1744;
-  font-size: 20px;
-  margin-top: 10px;
+.alert {
+  color: #ff4b5c;
 }
 
-.hidden {
-  display: none;
+.safe {
+  color: #3fffac;
 }
 
-.team-title {
-  margin-top: 30px;
-  font-size: 20px;
-  color: #eee;
+.team-header {
+  margin-top: 40px;  
+  height: 100px;  
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  
 }
 
-.team-list {
-  list-style-type: none;
-  padding: 0;
-  font-size: 16px;
+.footer{
+  background-color: #1e3c72;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color:;
+  
+  text-align: center;
+  padding: 1em;
+
 }
