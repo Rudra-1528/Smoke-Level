@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🔥 Smoke Alert Dashboard</h1>
-    <div class="status-box">
+    <div class="logo">
+        <h3>SASET</h3>
+    </div>
+   <div class="main">
+         <div class="team-header">
+          <p><strong>Team Members:</strong> Krishna Patel | Manojit Das | Rudra Pratap Singh</p>
+         </div>
+      <div class="container">
+        <h1>🔥 Smoke Alert Dashboard 🚨</h1>
+      <div class="status-box">
       <p>Current Smoke Level:</p>
       <h2 id="smokeLevel">--</h2>
       <p id="status">Waiting for data...</p>
-    </div>
-    <audio id="alertSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
-  </div>
+     </div>
+     <audio id="alertSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+     </div>
+   </div> 
+   
+   <footer class="footer">
+    &copy;  RRU|SASET All Rights Reserved.
+  </footer>
+   
 
   <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
   <script src="script.js"></script>
