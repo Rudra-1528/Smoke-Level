@@ -5,7 +5,7 @@ const client = mqtt.connect("wss://mqtt.thingsboard.cloud:443/mqtt", {
   username: ACCESS_TOKEN
 });
 
-const smokeDisplay = document.getElementById("smokeLevel");
+const smokeDisplay = document.getElementById("smoke");
 const statusDisplay = document.getElementById("status");
 const alertSound = document.getElementById("alertSound");
 
