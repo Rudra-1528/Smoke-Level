@@ -18,6 +18,8 @@ client.on("connect", () => {
 
 client.on("message", (topic, message) => {
   const payload = JSON.parse(message.toString());
+  console.log("Received:", payload);
+
   const smoke = payload.smoke;
 
   smokeDisplay.textContent = smoke;
